@@ -1,0 +1,231 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+    position: fixed;
+    color: white;
+}
+
+.logo1 {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.logo span {
+    color: rgb(255, 255, 255);
+    font-family: water system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+/* home section styles starts here */
+.home-section {
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(./images/fine\ man.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    /* object-fit: fill; */
+}
+
+.home-section img {
+    inset: 0;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    animation: scaling 15s ease-in-out infinite;
+}
+
+@keyframes scaling {
+    0%, 100% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.2;
+    }
+
+}
+
+.home-section-text {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.home-section-text h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.home-section-text h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 6rem;
+    font-style: italic;
+
+}
+
+.a {
+font-family: water system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+width: 12rem;
+height: 3rem;
+font-size: 20px;
+/* font-weight: bold; */
+color: rgb(255, 255, 255);
+}
+
+.a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.w-container {
+    background-color: beige;
+    margin-left: 3%;
+    width: 50%;
+    height: 210px;
+}
+
+.w2 h2 {
+    background-color: red;
+    color: white;
+    /* text-align: center; */
+    font-family: water system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w2 input {
+width: 40%;
+padding: 2.3%;
+margin-left: 5.7%;
+background-color: rgb(236, 241, 241);
+border: solid rgb(184, 172, 172);
+outline-color: red;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.w2 button {
+    width: 86%;
+    margin-left: 5.7%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: none;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+
+.w2 button:hover{
+    background-color: white;
+    transition: ease-in 1s;
+    color: black;
+}
+
+.po-container {
+    /* display: flex; */
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.back {
+    margin: 30px;
+    margin-left: 60px;
+        color: rgb(0, 0, 0);
+        font-family: water system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        
+        
+    }
+    
+    .back p {
+        padding-top: 15px; 
+     text-align: justify;
+    }
+    
+    .back input {
+        width: 15rem;
+        height: 2rem;
+        border-radius: none;
+        outline: none;
+        padding: 5px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    input:hover {
+        background-color: white;
+        border: solid red;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.6s ease-in;
+    
+    }
+    
+    .back button {
+        width: 5rem;
+        height: 2rem;
+        border-radius: none;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: 0.6s ease-in;
+        cursor: pointer;
+    
+    }
+    
+    button:hover {
+        background-color: white;
+        color: black;
+        transition: 0.6s ease-in;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
